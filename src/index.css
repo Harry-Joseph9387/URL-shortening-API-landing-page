@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navigation{
+  background-color:hsl(257, 27%, 26%);
+}
+.btn-cta{
+  background-color: cyan;
+  
+  border-radius:10px;
+  color:white;
+  @apply lg:px-10 px-2 py-2
+}
+footer li{
+  margin-bottom:5px;
+}
+.showcase img{
+  height:10rem;
+}
+.showcase{
+  height:10rem;
+  background-color:hsl(257, 27%, 26%);
+  max-width: 75rem;
+}
+
+
+.boost img{
+  height:14rem;
+}
+.boost{
+  background-color:hsl(257, 27%, 26%);
+  height:14rem;
+  position:relative;
+}
+.boost-text,.showcase form {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.properties img{
+  background-color: hsl(257, 27%, 26%);
+  width:90px;
+}
+.line{
+  height:10px;
+  width:100%;
+  background-color: cyan;
+  position: absolute;
+  top:50%;
+
+}
+.properties article:nth-child(3){
+  transform: translateY(2rem);
+}
+.properties article:last-child{
+  transform: translateY(4rem);
+}
+.display{
+  /* width:1200px; */
+}
+@media(max-width:764px){
+  .line{
+    rotate: 90deg;
+  }
+  .btn-cta{}
+}
